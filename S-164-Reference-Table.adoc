@@ -1,0 +1,203 @@
+// =====================================================================
+// S-164 – Gabarit de « Test Reference »
+// Reproduit le tableau du fichier « Test Reference.docx »
+// Grille : 10 colonnes (largeurs relatives reprises du tblGrid Word)
+// Notation des cellules :  N+   = fusion sur N colonnes
+//                          ^    = centré horizontalement   .^ = centré verticalement
+//                          h    = cellule d'en-tête (gras)
+//                          {gris} = fond gris BFBFBF (comme dans Word)
+// =====================================================================
+
+// Fond gris : appliqué par Metanorma (macro td-style).
+// Sur GitHub (attribut env-github), la macro est inconnue : on la neutralise
+// pour qu'elle ne s'affiche pas en texte brut.
+ifndef::env-github[:gris: td-style:[background-color: #BFBFBF]]
+ifdef::env-github[:gris:]
+
+// Retraits (équivalents aux espaces / retraits du document Word)
+:r1: {nbsp}{nbsp}{nbsp}{nbsp}
+:r2: {nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}
+
+[[tab-s164-test-reference]]
+[%noheader%unbreakable%unnumbered,cols="23,2,15,3,8,3,14,6,17,9",frame=all,grid=all]
+|===
+// ---- Identification -------------------------------------------------
+2+^.^h|Test Reference {gris}
+4+^.^|S-164 Test Name
+2+^.^h|IHO Reference +
+IEC Reference {gris}
+2+^.^|IHO Standard reference +
+IEC Standard reference
+
+// ---- Description ------------------------------------------------------
+10+^h|Test Description {gris}
+10+.^|A short description of what the test covers.
+
+// ---- Setup ------------------------------------------------------------
+10+^h|Setup {gris}
+10+|The configuration required before performing the test. Generally, starts with reference to another test: "`__As per end (or possibly "`start`") of test xxxxxx (test name)__`" and mentions exchange sets to be loaded, specific settings to be applied and any other information required.
+
+// ---- Display Mode / Independent Mariner's Selections -----------------
+5+^.^h|Display Mode {gris}
+5+^.^h|Independent Mariner's Selections +
+(Default = On) {gris}
+
+5+|*Displaybase*, *Standard* or *Other*
+4+|Accuracy
+^.^|
+
+5+^.^h|Context Parameters (Default = On) {gris}
+4+|Contour label
+^.^|
+
+3+|Safety contour
+2+.^|
+4+|Highlight date dependent
+^|
+
+3+|Safety depth
+2+.^|
+4+|Highlight document
+^|
+
+3+|Deep contour
+2+.^|
+4+|Highlight info
+^|
+
+3+|Shallow contour
+2+.^|
+4+|Shallow pattern
+^|
+
+3+|Four shades
+2+.^|
+4+|Unknown objects
+^|
+
+3+|Radar overlay
+2+.^|
+4+|Update review
+^|
+
+3+|Plain boundaries
+2+.^|
+5+|*Chart text*
+
+3+|Simplified symbols
+2+.^|
+4+|{r1}Important text
+^|
+
+3+|Full light lines
+2+.^|
+5+|{r1}*Other Text*
+
+3+|Ignore scale minimum
+2+.^|
+4+|{r2}Names
+^|
+
+3+|Shallow water dangers
+2+|
+4+|{r2}Light description
+^|
+
+// ---- Palette ----------------------------------------------------------
+5+^.^h|Palette {gris}
+4+|{r2}All other chart text
+^|
+
+5+|*Day*, *Dusk* or *Night*
+5+^|
+
+// ---- Viewing Date / Display -------------------------------------------
+5+^.^h|Viewing Date (or Date Range) {gris}
+5+^h|Display {gris}
+
+|Start viewing date
+4+|
+2+.^|Centre
+3+.^|The position at which the display must be centred.
+
+|End viewing date
+4+|
+2+|Scale
+3+|Dataset viewing scale.
+
+// ---- Viewing Groups ---------------------------------------------------
+10+^h|Viewing Groups (Default = On) {gris}
+
+6+^h|Standard Display {gris}
+4+^h|Other {gris}
+
+4+|Drying lines
+2+^|
+3+|Spot soundings
+.^|
+
+6+|*Buoys. beacons, aids to navigation*
+3+|Submarine cables and pipelines
+.^|
+
+4+|{r2}Buoys, beacons, structures
+2+^|
+3+|All isolated dangers
+.^|
+
+4+|{r2}Lights
+2+^|
+3+|Magnetic variation
+.^|
+
+4+|Boundaries and limits
+2+^|
+3+|Depth contours
+.^|
+
+4+|Prohibited and restricted areas
+2+^|
+3+|Seabed
+.^|
+
+4+|Chart scale boundaries
+2+^|
+3+|Tidal
+.^|
+
+4+|Cautionary notes
+2+^|
+3+|Miscellaneous (Other)
+.^|
+
+4+|Ships' routeing systems and ferry routes
+2+^|
+3+|
+.^|
+
+4+|Archipelagic sea lanes
+2+^|
+3+|
+.^|
+
+6+<|*Miscellaneous (Standard)*
+3+|
+.^|
+
+4+|{r2}Chart (Standard)
+2+^|
+3+|
+.^|
+
+4+|{r2}Alert Highlights (Standard)
+2+^|
+3+|
+.^|
+
+// ---- Action / Results -------------------------------------------------
+10+^h|Action {gris}
+10+.^|The action which the test executor must perform after the setup is in place and before checking the expected results.
+
+10+^h|Results {gris}
+10+|The result which the test executor must observe to complete the test.
+|===
