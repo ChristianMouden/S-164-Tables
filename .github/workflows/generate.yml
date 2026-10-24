@@ -1,0 +1,28 @@
+name: generate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: metanorma/metanorma:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile S-164 document
+        run: metanorma compile --agree-to-terms sources/S-164-Reference-Table-document.adoc
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: s-164-output
+          path: |
+            sources/*.html
+            sources/*.pdf
+            sources/*.doc
+            sources/*.xml
