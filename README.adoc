@@ -1,0 +1,22 @@
+= S-164-Tableaux
+
+Code Metanorma (AsciiDoc) pour générer les tableaux de la norme OHI S-164.
+
+== Contenu
+
+* `sources/sections/S-164-Reference-Table.adoc` : tableau « Test Reference » (gabarit de cas de test S-164).
+* `sources/S-164-Reference-Table-document.adoc` : document Metanorma (flavour `iho`) qui inclut le tableau.
+* `.github/workflows/generate.yml` : génération automatique HTML / PDF / Word / XML via GitHub Actions.
+
+== Génération locale
+
+[source,sh]
+----
+docker run -v "$(pwd)":/metanorma -w /metanorma metanorma/metanorma \
+  metanorma compile --agree-to-terms sources/S-164-Reference-Table-document.adoc
+----
+
+== Génération sur GitHub
+
+Chaque push sur `main` lance le workflow *generate* ; les fichiers produits sont
+téléchargeables dans l'onglet *Actions* (artefact `s-164-output`).

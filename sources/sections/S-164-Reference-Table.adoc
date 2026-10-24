@@ -1,0 +1,193 @@
+// =====================================================================
+// S-164 – Gabarit de « Test Reference »
+// Reproduit le tableau du fichier « Test Reference.docx »
+// Grille : 10 colonnes (largeurs relatives reprises du tblGrid Word)
+// Notation des cellules :  N+   = fusion sur N colonnes
+//                          ^    = centré horizontalement   .^ = centré verticalement
+//                          h    = cellule d'en-tête (gris, gras)
+// =====================================================================
+
+[[tab-s164-test-reference]]
+.S-164 test reference template
+[cols="23,2,15,3,8,3,14,6,17,9",frame=all,grid=all,options="unbreakable"]
+|===
+// ---- Identification -------------------------------------------------
+2+^.^h|Test Reference
+4+^.^|S-164 Test Name
+2+^.^h|IHO Reference +
+IEC Reference
+2+^.^|IHO Standard reference +
+IEC Standard reference
+
+// ---- Description ------------------------------------------------------
+10+^h|Test Description
+10+|A short description of what the test covers.
+
+// ---- Setup ------------------------------------------------------------
+10+^h|Setup
+10+|The configuration required before performing the test. Generally, starts with reference to another test: "`__As per end (or possibly "`start`") of test xxxxxx (test name)__`" and mentions exchange sets to be loaded, specific settings to be applied and any other information required.
+
+// ---- Display Mode / Independent Mariner's Selections -----------------
+5+^.^h|Display Mode
+5+^h|Independent Mariner's Selections +
+(Default = On)
+
+5+|*Displaybase*, *Standard* or *Other*
+4+|Accuracy
+|
+
+5+^h|Context Parameters (Default = On)
+4+|Contour label
+|
+
+3+|Safety contour
+2+|
+4+|Highlight date dependent
+|
+
+3+|Safety depth
+2+|
+4+|Highlight document
+|
+
+3+|Deep contour
+2+|
+4+|Highlight info
+|
+
+3+|Shallow contour
+2+|
+4+|Shallow pattern
+|
+
+3+|Four shades
+2+|
+4+|Unknown objects
+|
+
+3+|Radar overlay
+2+|
+4+|Update review
+|
+
+3+|Plain boundaries
+2+|
+5+|*Chart text*
+
+3+|Simplified symbols
+2+|
+4+|{nbsp}{nbsp}{nbsp}{nbsp}Important text
+|
+
+3+|Full light lines
+2+|
+5+|{nbsp}{nbsp}{nbsp}{nbsp}*Other Text*
+
+3+|Ignore scale minimum
+2+|
+4+|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Names
+|
+
+3+|Shallow water dangers
+2+|
+4+|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Light description
+|
+
+// ---- Palette ----------------------------------------------------------
+5+^h|Palette
+4+|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}All other chart text
+|
+
+5+|*Day*, *Dusk* or *Night*
+5+|
+
+// ---- Viewing Date / Display -------------------------------------------
+5+^h|Viewing Date (or Date Range)
+5+^h|Display
+
+|Start viewing date
+4+|
+2+.^|Centre
+3+|The position at which the display must be centred.
+
+|End viewing date
+4+|
+2+|Scale
+3+|Dataset viewing scale.
+
+// ---- Viewing Groups ---------------------------------------------------
+10+^h|Viewing Groups (Default = On)
+
+6+^h|Standard Display
+4+^h|Other
+
+4+|Drying lines
+2+|
+3+|Spot soundings
+|
+
+6+|*Buoys. beacons, aids to navigation*
+3+|Submarine cables and pipelines
+|
+
+4+|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Buoys, beacons, structures
+2+|
+3+|All isolated dangers
+|
+
+4+|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Lights
+2+|
+3+|Magnetic variation
+|
+
+4+|Boundaries and limits
+2+|
+3+|Depth contours
+|
+
+4+|Prohibited and restricted areas
+2+|
+3+|Seabed
+|
+
+4+|Chart scale boundaries
+2+|
+3+|Tidal
+|
+
+4+|Cautionary notes
+2+|
+3+|Miscellaneous (Other)
+|
+
+4+|Ships' routeing systems and ferry routes
+2+|
+3+|
+|
+
+4+|Archipelagic sea lanes
+2+|
+3+|
+|
+
+6+|*Miscellaneous (Standard)*
+3+|
+|
+
+4+|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Chart (Standard)
+2+|
+3+|
+|
+
+4+|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Alert Highlights (Standard)
+2+|
+3+|
+|
+
+// ---- Action / Results -------------------------------------------------
+10+^h|Action
+10+|The action which the test executor must perform after the setup is in place and before checking the expected results.
+
+10+^h|Results
+10+|The result which the test executor must observe to complete the test.
+|===
